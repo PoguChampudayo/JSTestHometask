@@ -7,7 +7,8 @@ test.each([
   [{ name: 'Чародей', health: 89 }, 'healthy'],
   [{ name: 'Плут', health: 16 }, 'wounded'],
   [{ name: 'Чародей', health: 15 }, 'critical'],
-  [{ name: 'Чародей', health: 1 }, 'critical'],
+  [{ name: 'Следопыт', health: 1 }, 'critical'],
+  [{ name: 'Паладин', health: 0 }, 'dead'],
 ])(
   ('should return %s status according to its health (%s)'),
   (character, expected) => {
